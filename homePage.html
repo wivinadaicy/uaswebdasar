@@ -1,0 +1,496 @@
+    <html>
+    <head>
+        <meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Rency FASHION - Home</title>
+        
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+        <link rel="stylesheet" type="text/css" href="assets/css/base2.css" />
+        <link rel="stylesheet" href="assets/css/buttonStore.css">
+        <link rel="stylesheet" href="assets/css/mediascreenRency.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        
+        <link rel="icon" href="assets/img/fullicon.png" type="image/x-icon">
+        
+        <link rel="stylesheet" href="assets/css/loadingscreen.css">
+        
+        <!--pure.io-->
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+        
+        <!--JQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+        <!--Font Awesome Icon-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+        
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    </head>
+    <div class="preload" id="preload">
+        <div class="loaderFrame">
+            <img src="assets/img/fullicon.png" class="loader1">
+            <img src="assets/img/icon.png" class="loader2">
+        </div>
+    </div>
+    <section class="searchh">
+        <form class="formnya">
+            <p>RENCY FASHION</p>
+            <input type="search" class="inputny" placeholder="What would you like to search for?"/>
+            <button type="submit" class="sbtn fa fa-search" style="font-size: 20pt;"></button>
+        </form>
+        <div class="topp">
+            <img src="assets/img/segitiga.png" class="cari">
+        </div>
+    </section>
+    <body class="page">
+        <nav class="navs">
+            <img class="logoh" src="assets/img/icon.png" alt="logo">
+            <div class="navi navigas">
+                <a href="homePage.html"><p class="naviga" style="font-weight: bold">HOME</p></a>
+                <a href="products.html"><p class="naviga">PRODUCTS</p></a>
+                <a href="submit.html"><p class="naviga">SUBMIT</p></a>
+            </div>
+        </nav>
+        <div class="miring navigas">
+            <a href="about.html"><span class="atur">ABOUT US</span></a>
+            <span class="atur">•</span>
+            <a href="contact.html"><span class="atur">CONTACT US</span></a>
+        </div>
+        <main>
+			<div class="slideshow col-12" id="keatas">
+				<div class="slide">
+					<div class="slide__img-wrap">
+						<div class="slide__img" style="background-image: url(assets/img/spring%20-%20Copy.jpg);"></div>
+						<div class="slide__img-reveal"></div>
+					</div>
+					<span class="slide__number">#CHIC</span>
+					<h3 class="slide__title">SPRING</h3>
+                    
+				</div>
+				<div class="slide">
+					<div class="slide__img-wrap">
+						<div class="slide__img" style="background-image: url(assets/img/summer%20-%20Copy.jpg);"></div>
+						<div class="slide__img-reveal"></div>
+					</div>
+					<span class="slide__number">#SWEET</span>
+					<h3 class="slide__title">SUMMER</h3>
+				</div>
+				<div class="slide">
+					<div class="slide__img-wrap">
+						<div class="slide__img" style="background-image: url(assets/img/fall%20-%20Copy.jpg);"></div>
+						<div class="slide__img-reveal"></div>
+					</div>
+					<span class="slide__number">#DAZZLING</span>
+					<h3 class="slide__title">AUTUMN</h3>
+				</div>
+				<div class="slide">
+					<div class="slide__img-wrap">
+						<div class="slide__img" style="background-image: url(assets/img/winter%20-%20Copy.jpeg);"></div>
+						<div class="slide__img-reveal"></div>
+					</div>
+					<span class="slide__number">#ELEGANT</span>
+					<h3 class="slide__title">WINTER</h3>
+				</div>
+				<nav class="slidenav">
+					<button class="slidenav__item slidenav__item--prev" id="kiri">Previous</button>
+					<button class="slidenav__item slidenav__item--next" id="kanan">Next</button>
+				</nav>
+			</div>
+            <img class="panahArtikel" width="10%" src="assets/img/gifarrow.gif" style="opacity: 1; z-index: 10" id="artikel1" onclick="aktif1()">
+            <img class="panahArtikel" width="10%" src="assets/img/gifarrow.gif" id="artikel2" onclick="aktif2()">
+            <img class="panahArtikel" width="10%" src="assets/img//gifarrow.gif" id="artikel3" onclick="aktif3()">
+            <img class="panahArtikel" width="10%" src="assets/img/gifarrow.gif" id="artikel4" onclick="aktif4()">
+            
+            <div id="slideshow1">
+                <span id="tutup2" onclick="mati1()" class="closePop">x</span>
+                <div>
+                    <img src="assets/img/spring1.jpg" width="100%">
+                </div>
+                <div>
+                    <img src="assets/img/spring2.jpg" width="100%"> 
+                </div>
+                <div>
+                    <img src="assets/img/spring3.png" width="100%"> 
+                </div>
+            </div>
+            <div id="jelas1">Spring represents renewal and rebirth. The warming weather revitalizes plant life, adding color to the drab outdoors. Dress yourself for the season by adding color and life back into your wardrobe. Start pulling out breezier materials that can keep you cool as the weather warms up.</div>
+            
+            <div id="slideshow2">
+                <span id="tutup2" onclick="mati2()" class="closePop">x</span>
+                <div>
+                    <img src="assets/img/summer1.jpg" width="100%">
+                </div>
+                <div>
+                    <img src="assets/img/summer2.jpg" width="100%"> 
+                </div>
+                <div>
+                    <img src="assets/img/summer3.jpg" width="100%"> 
+                </div>
+            </div>
+            <div id="jelas2">Summer is popular with shorts, dresses and sleeveless clothes. In summer, avoid wearing tight clothes that restrict your circulation. Also, avoid wearing dark fabrics because it can absorb sun rays and trap their heat. It makes you feel even hotter. Colours like white, yellow, beige and other light shades keep you cool. </div>
+            
+            <div id="slideshow3">
+                <span id="tutup2" onclick="mati3()" class="closePop">x</span>
+                <div>
+                    <img src="assets/img/fall1.png" width="100%">
+                </div>
+                <div>
+                    <img src="assets/img/fall2.png" width="100%"> 
+                </div>
+                <div>
+                    <img src="assets/img/fall3.jpg" width="100%"> 
+                </div>
+            </div>
+            <div id="jelas3" style="height: 30vh">Autumn means it's time to bag up those featherlight linens and break out the heavy cotton and wool shirts. Balancing glamorous trends with the cold reality of fall weather is an unusual challenge. But you can look forward to the comfy, cozy clothes that cool weather brings with this season’s winter-friendly trends that can keep you warm while looking hot.</div>
+            
+            <div id="slideshow4">
+                <span id="tutup2" onclick="mati4()" class="closePop">x</span>
+                <div>
+                    <img src="assets/img/winter1.png" width="100%">
+                </div>
+                <div>
+                    <img src="assets/img/winter2.jpg" width="100%"> 
+                </div>
+                <div>
+                    <img src="assets/img/winter3.jpg" width="100%"> 
+                </div>
+            </div>
+            <div id="jelas4" style="height: 32vh">Winter style: the transition from fall to winter is a little less dramatic on the closet than say, summer to fall. A wool coat is the hardest-working piece in your winter wardrobe. It’s the one thing you and everything else will be seeing the most of over the next few months. Typically relegated to cute-outfit cover status, modern silhouettes and bold statement colors give the wool coat it’s time to shine.</div>
+		</main>
+        <div class="judulNews">
+            <div class="garisNews1" data-aos="fade-right"></div>
+            <h1 data-aos="zoom-out">N<span class="spanNews"></span>E<span class="spanNews"></span>W<span class="spanNews"></span>S</h1>
+            <div class="garisNews2" data-aos="fade-left"></div>
+        </div>
+        <section>
+            <div class="news">
+                <div class="row">
+                        <div class="dalamNews1 col-6" 
+                             onmouseover="geserKiri1()" onmouseout="geserKanan1()">
+                            <img src="assets/img/valentine.jpg" id="newsPs">
+                            <div class="text1">
+                                SPAIN
+                            </div>
+                            <div class="text2">
+                                Valentine Outfit <br>Idea
+                            </div>
+                            <div class="text3">
+                                Special day needs special outfit
+                            </div>
+                            <a onclick="artikelaktif1()"><p class="readMore">Read More</p></a>
+                        </div>
+                        <div class="dalamNews2 col-6" onmouseover="geserKiri2()" onmouseout="geserKanan2()">
+                            <img src="assets/img/forc.jpg" id="newsPd">
+                                <div class="text1a">
+                                SWEDEN
+                                </div>
+                                <div class="text2a">
+                                    Fashion<br>or Costume?
+                                </div>
+                                <div class="text3a">
+                                    Outfit idea become so confusing
+                                </div>
+                                <a onclick="artikelaktif2()"><p class="readMorea">Read More</p></a>
+                        </div>
+                </div>
+                <div class="row">
+                        <div class="dalamNews3 col-6" onmouseover="geserKiri3()" onmouseout="geserKanan3()">
+                            <img src="assets/img/sneakers.png" id="newsPt">
+                            <div class="text1a">
+                                <br>
+                                <br>
+                                ITALY
+                            </div>
+                            <div class="text2a">
+                                The Season of Sneakers
+                            </div>
+                            <div class="text3a">
+                                It's time to up your sneaker game.
+                            </div>
+                            <a onclick="artikelaktif3()"><p class="readMorea">Read More</p></a>
+                        </div>
+                        <div class="dalamNews4 col-6" onmouseover="geserKiri4()" onmouseout="geserKanan4()">
+                            <img src="assets/img/pfw.jpg" id="newsPe">
+                            <div class="text1">
+                                FRANCE
+                                </div>
+                                <div class="text2">
+                                    Paris Fashion Week
+                                </div>
+                                <div class="text3">
+                                    How was Paris Fashion Week?
+                                </div>
+                            <a onclick="artikelaktif4()"><p class="readMore">Read More</p></a>
+                        </div>
+                </div>
+                <div class="alas" id="popupa">
+            
+                </div>
+                
+                <div class="artikelPopUp" id="arc1">
+                    <span id="hapuskan1" class="closePoptikel" onclick="artikelmati1()">x</span>
+                    <img src="assets/img/valentine1.png" width="100%" style="opacity: 0.7">
+                    <h1>Valentine Outfit Idea</h1>
+                    <p><span class="dropcap">V</span>alentine, I know what you're thinking: What's so hard about dressing for ? Throw on , some , and bam, you're done. Yes, yes all valid points. But what if your date springs, say, mini golf on you? Or, what if you don't have Valentine's Day plans at all? Or, what if you're unsure how to style that rose-strewn slip dress in the winter? WELL. I've got news for you: There's an outfit for that. This is inspiration from Fashion Nova by LeSassafras</p>
+                    <center>
+                        <video width="70%" controls id="video1">
+                          <source src="assets/video/valentine.mp4" type="video/mp4">
+                          Your browser does not support HTML5 video.
+                        </video>
+                    </center>
+                    <p>Keep on scrolling for three perfect V-day outfits for whatever you have planned (or don't have planned). You may have to know this things. Check it one by one!</p>
+                    <p><b>STEP 1: Anything that Doesn't Involve a Meal</b><br>Take the fancy route with a rose-strewn slip. But don't forget to shrug on coat, because, well, it's winter (a camel coat will warm you up, both literally and figuratively). Finally, finish your look with a polka-dot purse for interest and sweet sandals ()</p>
+                    <p><b>STEP 2: Anything that Doesn't Involve a Activity</b><br>Dont'forget! and that includes mini golf, which means jeans and walkable heels are a must. Dress them up with a set of standout earrings, a chic top, and a moto jacket for a smidge of edge.</p>
+                    <p><b>STEP 3: Anything that Doesn't Involve a Date</b><br>No awkward first date on the books? No S.O? No problem. Make a non-date date with friends. A casual crop top-high-waist pant combo is just the thing—it's laid-back and cute enough for a serendipitous run-in with your soulmate. </p>
+                    <p>Valentine doesn’t have to be just all chocolates and flowers. Drop your S.O. a hint that you’re hoping for a beautiful piece of jewelry to wear year-round. Single and free to mingle? Invest in something you love. Self-purchasing is chic. <b>&#40;WD&#41;.</b></p>
+                </div>
+                
+                <div class="artikelPopUp" id="arc2">
+                    <span id="hapuskan2" class="closePoptikel" onclick="artikelmati2()">x</span>
+                    <img src="assets/img/forc1.jpg" width="100%" style="opacity: 0.7">
+                    <h1>Fashion or Costume?</h1>
+                    <p><span class="dropcap">I</span>f the industry didn’t get a little weird on occasion, it         wouldn’t be fashion. It would be just clothes.
+                        Halloween is the one night a year when you can step out in your most outlandish gear without feeling ridiculous. But for many in the fashion flock, such dressing up is a year-round event. Indeed, it’s getting harder to distinguish between the makings of a Halloween costume and the accessory of the moment.</p>
+                        <p>That’s not a bad thing. After all, if the industry didn’t get a little weird on occasion, it wouldn’t be fashion. It would be just clothes. The hotly anticipated Moschino x HnM collection, set to drop Nov. 6, provides plenty of examples of the sweet spot in the middle.
+                    </p>
+                    <center>
+                        <img width="30%" src="assets/img/costume2.jpg">
+                    </center>
+                    <p>Part raver wear, part French maid feather duster, a pink feathered tube top is plenty versatile when you think of its costume potential.</p>
+                    <center>
+                        <img width="30%" src="assets/img/costume3.jpg">
+                    </center>
+                    <p>Need a little head space? Keep close talkers at bay — and the double takes coming in this banana yellow creation.</p>
+                    <p>Part of fashion's art is its artifice. In that way, we all wear costumes every day.
+                    Find your own style of costume and be an inspiration to others!
+                    </p>
+                </div>
+                
+                <div class="artikelPopUp" id="arc3">
+                    <span id="hapuskan3" class="closePoptikel" onclick="artikelmati3()">x</span>
+                    <img src="assets/img/sneakers1.jpg" width="100%" style="opacity: 0.7">
+                    <h1>The Season of Sneakers</h1>
+                    <p><span class="dropcap">T</span>he youngest member of the Kardashian-Jenner clan has been announced as the latest brand ambassador of sports apparel giant Adidas. The news regarding Jenner’s latest endorsement deal, comes two years after the 21-year-old signed with Adidas competitor Puma for an alleged seven-figure sum. The reality TV star and Kylie Cosmetics founder makes her Adidas debut as the face of the company’s Falcon sneaker.
+                    </p>
+                    <p>In its marketing surrounding the revived shoes, Adidas says, “Falcon is for those who do what they want regardless of what anyone thinks. It’s not for the faint-hearted, but for those who know that living unapologetically is the only way to live.” Regarding its decision to sign Kylie, the sportswear heavyweight mentioned, “As a life-long fan of the brand, Kylie embodies the bold spirit of Falcon and we are pleased to announce her as the face of the campaign.”
+                    </p>
+                    <p>Here are some ootd inspoiration from some bloggers:</p>
+                    <center>
+                        <img width="30%" src="assets/img/sneakers2.jpg">
+                    </center>
+                    <p>Look at her trackpants, you can combine your outfit like her. Just put on leather jacket as your top and you will look perfect.
+                    </p>
+                    <center>
+                        <img width="30%" src="assets/img/sneakers3.jpg">
+                    </center>
+                    <p>Pink top and pink sneakers are good ideas for your ootd. You will look girly and trendy at the same time.
+                    </p>
+                    <center>
+                        <img width="30%" src="assets/img/sneakers4.png">
+                    </center>
+                    <p>Leopard long skirt isn't bad to combine your sneakers with it. If you want to look more trendy, put on a shades. It will definitely look good on you.
+                    </p>
+                    <br>
+                </div>
+                
+                <div class="artikelPopUp" id="arc4">
+                    <span id="hapuskan4" class="closePoptikel" onclick="artikelmati4()">x</span>
+                    <img src="assets/img/pfw3.jpg" width="100%" style="opacity: 0.7">
+                    <h1>Paris Fashion Week</h1>
+                    <p><span class="dropcap">T</span>he month-long fashion marathon is coming to a close, but not before we have made our way to Paris for the fourth and final leg of the spring/summer 2019 shows. Paris Fashion Week started on a high with Dior's dance-inspired spectacular, and Alessandro Michele put on a show to remember at Gucci – with vocals from Jane Birkin, no less. But it is Hedi Slimane's Celine debut that remains the talk of the town.</p>
+                    <center>
+                        <img width="30%" src="assets/img/pfw1.jpg">
+                    </center>
+                    <p>On the Parisian pavements, however, it is a more familiar story: prints - leopard, python and even the occasional zebra - continue to reign supreme. So too does the check suit. And where previous fashion weeks have enjoyed warmer weather, the French capital is cooling down, so the layers are starting to pile on. Let the City of Light's finest inspire your style for the season ahead, as seen through the lens of Vogue's street-style photographer Jonathan Daniel Pryce.</p>
+                    <center>
+                        <img width="30%" src="assets/img/pfw2.jpg">
+                    </center>
+                    <p>Take a look on this video! See how crowded it is. This video is from Love Marie Escudero
+                    channel. She recorded every details of Paris Fashion Week!</p>
+                    <center>
+                        <video width="70%" controls id="video2">
+                          <source src="assets/video/pfw.mp4" type="video/mp4">
+                          Your browser does not support HTML5 video.
+                        </video>
+                    </center><br>
+                </div>
+            </div>
+            
+        </section>
+        <section>
+            <div class="bestProd"-12>
+                <div class="garisProd1" data-aos="fade-right"></div>
+                <h1 data-aos="zoom-out">PRODUCTS OF THE MONTH</h1>
+                <div class="garisProd2" data-aos="fade-left"></div>
+            <div class="container" style="margin-top: 3%; text-align: center;">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="gridStore" onmouseover="tombolEar3muncul()" onmouseout="tombolEar3hilang()">
+                                <img src="assets/img/top3.jpg" class="imgStore">
+                            <p class="namanya">White Crop Tee</p>
+                                <p class="autor">Rp. 120.000,-<br>Designed by. Kelly</p>
+                            <div class="dalem" id="ear3">
+
+                                <button class="btn btn-1 btn-1e"onclick="nampilinPop3a()">DETAILS</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="gridStore" onmouseover="tombolEar2muncul()" onmouseout="tombolEar2hilang()">
+                                <img src="assets/img/sho2.jpg" class="imgStore">
+                            <p class="namanya">YSL Heels</p>
+                                <p class="autor">Rp. 1.700.000,-<br>Designed by. Jessie</p>
+                            <div class="dalem" id="ear2">
+                                <button class="btn btn-1 btn-1e"onclick="nampilinPop2a()">DETAILS</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="gridStore" onmouseover="tombolEar1muncul()" onmouseout="tombolEar1hilang()">
+                                <img src="assets/img/bot1.jpg" class="imgStore">
+                            <p class="namanya">Flower Power Skirt</p>
+                                <p class="autor">Rp. 499.000,-<br>Designed by. Stevie</p>
+                            <div class="dalem" id="ear1">
+
+                                <button class="btn btn-1 btn-1e"onclick="nampilinPop1a()">DETAILS</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                            <div class="gridStore" onmouseover="tombolEar4muncul()" onmouseout="tombolEar4hilang()">
+                                    <img src="assets/img/ear4.png" class="imgStore">
+                                <p class="namanya">Saphire Earrings</p>
+                                    <p class="autor">Rp. 280.000,-<br>Designed by. Eliona</p>
+                                <div class="dalem" id="ear4">
+                                    
+                                    <button class="btn btn-1 btn-1e" onclick="nampilinPop4a()">DETAILS</button>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pop" id="pop3">
+                <span class="closePop" onclick="hilanginPop3a()";>x</span>
+                <div id="popItem1" class="popupDalem">
+                    <h2>White Crop Tee</h2>
+                    <p class="designerDalem">Designed by Kelly</p>
+                    <p class="hargaDalem">Rp. 120.000,-</p>
+                    <p>This item is a must-buy item. Why? Any kind of pants and skirts will suit well with this crop tee.It's comfortable for your daily outfit. You won't feel hot when you wear this.</p>
+                    <a class="pure-button keranjang" href="keranjang.html">
+                        <i class="fa fa-shopping-cart fa-lg"></i>
+                        Buy
+                    </a>
+                    <div class="tiles">
+                        <div class="tile imagePop" data-scale="1.6" data-image="assets/img/top3.jpg"></div>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="pop" id="pop1">
+                <span class="closePop" onclick="hilanginPop1a()";>x</span>
+                <div id="popItem1" class="popupDalem">
+                    <h2>Flower Power Skirt</h2>
+                    <p class="designerDalem">Designed by Stevie</p>
+                    <p class="hargaDalem">Rp. 499.000,-</p>
+                    <p>Blooming with opulent femininity yet structured enough for versatile styling, you'll treasure the Flower Power Skirt. The flower pattern makes a true statement for day or night, bringing whimsy and fun to even the most simple look. The skirt sits at the waist and is fully lined in soft satin.</p>
+                    <a class="pure-button keranjang" href="keranjang.html">
+                        <i class="fa fa-shopping-cart fa-lg"></i>
+                        Buy
+                    </a>
+                    <div class="tiles">
+                        <div class="tile imagePop" data-scale="1.6" data-image="assets/img/bot1.jpg"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="pop" id="pop4">
+                <span class="closePop" onclick="hilanginPop4a()";>x</span>
+                <div id="popItem1" class="popupDalem">
+                    <h2>Saphire Earrings</h2>
+                    <p class="designerDalem">Designed by. Eliona</p>
+                    <p class="hargaDalem">Rp. 280.000,-</p>
+                    <p>Simple formal earrings suitable for the classiest of affairs. Don't worry it's not that heavy. Tie your hair become a pony tail to make this earrings look more catchy.</p>
+                    <a class="pure-button keranjang" href="keranjang.html">
+                        <i class="fa fa-shopping-cart fa-lg"></i>
+                        Buy
+                    </a>
+                    <div class="tiles">
+                        <div class="tile imagePop" data-scale="1.6" data-image="assets/img/ear4.png"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="pop" id="pop2">
+                <span class="closePop" onclick="hilanginPop2a()";>x</span>
+                    <div id="popItem1" class="popupDalem">
+                        <h2>YSL Heels</h2>
+                        <p class="designerDalem">Designed by Jessie</p>
+                        <p class="hargaDalem">Rp. 1.700.000,-</p>
+                        <p>This is the higher, sexy version of the heel. Depending on how confident you are with a high-heel it can easily be worn for hours with ease and comfort.</p>
+                        <a class="pure-button keranjang" href="keranjang.html">
+                            <i class="fa fa-shopping-cart fa-lg"></i>
+                            Buy
+                        </a>
+                        <div class="tiles">
+                            <div class="tile imagePop" data-scale="1.6" data-image="assets/img/sho2.jpg"></div>
+                        </div>
+                    </div>
+            </div>
+            <h4 data-aos="flip-up"><i class="fa fa-angle-left"></i><a href="products.html">SEE MORE PRODUCTS</a><i class="fa fa-angle-right"></i></h4>
+            </div>
+            
+        </section>
+        <div class="popUp" id="popUpz">
+            
+        </div>
+        <a href="#keatas"><button id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button></a>
+        <footer>
+            <div class="footNav col-12">
+                <a href="homePage.html" style="font-weight: bold;">HOME</a>
+                <a href="products.html">PRODUCTS</a>
+                <a href="about.html">ABOUT</a>
+                <a href="contact.html">CONTACT</a>
+                <a href="submit.html">SUBMIT</a>
+                <div class="allright">© 2018 Rency Fashion. All rights reserved. Rency Fashion Community</div>
+                <div class="sosmed">
+                    <a class="linksos"><i class="fas fa-envelope" href="mailto:wivinadaicy@yahoo.com"></i></a>
+                    <a class="linksos" href="https://www.youtube.com/channel/UCX02eqhzSYFk5RNjHOvZ73g?view_as=subscriber"><i class="fab fa-youtube"></i></a>
+                    <a class="linksos" href="https://www.instagram.com/verenvalenciaa/"><i class="fab fa-instagram"></i></a>
+                    <a class="linksos" href="https://www.facebook.com/veren.valencia.3"><i class="fab fa-facebook-square"></i></a>
+                    <a class="linksos" href="https://twitter.com/ren_valenciaa?lang=en"><i class="fab fa-twitter-square"></i></a>
+                </div>
+            </div>
+        </footer>
+        <div class="popUpp" id="popup"></div>
+    </body>
+    
+    <!--buat searh bar-->
+    <script>
+      $(".cari").click(function(){
+        $(".formnya").slideToggle();
+      });
+    </script>
+    
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/demo2.js"></script>
+    <script src="assets/js/loadingscreen.js"></script>
+    <script src="assets/js/fungsi.js"></script>
+    <script src="assets/js/zoomDetail.js"></script>
+    <script type="text/javascript" src="assets/js/modernizr.foundation.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--supaya gabisa back-->
+        <script>
+            history.pushState(null, null, location.href);
+            window.onpopstate = function() {
+              history.go(1);
+            };
+        </script>
+        <script>
+            AOS.init();
+        </script>
+</html>
+

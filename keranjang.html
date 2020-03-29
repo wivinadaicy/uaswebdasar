@@ -1,0 +1,259 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RENCY Fashion - Products</title>
+        
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+        <link rel="stylesheet" type="text/css" href="assets/css/base.css" />
+        <link rel="stylesheet" href="assets/css/loadingscreen.css">
+        <link rel="stylesheet" href="assets/css/buttonStore.css">
+        
+        <link rel="icon" href="assets/img/fullicon.png" type="image/x-icon">
+        
+        <!--pure.io-->
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+        
+        
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        
+        <!--Font awesome-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+		
+        <!--Google font-->
+		<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    </head>
+     <div class="preload" id="preload">
+        <div class="loaderFrame">
+            <img src="assets/img/fullicon.png" class="loader1">
+            <img src="assets/img/icon.png" class="loader2">
+        </div>
+    </div>
+    <body>
+        <section class="searchh">
+            <form class="formnya">
+                <p>RENCY FASHION</p>
+                <input type="search" class="inputny" placeholder="What would you like to search for?" />
+                <button type="submit" class="sbtn fa fa-search" style="font-size: 20pt;"></button>
+            </form>
+            <div class="topp">
+                <img src="assets/img/segitiga.png" class="cari">
+            </div>
+        </section>
+        <header class="headProd" id="keatas">
+            <nav class="navs">
+                <img class="logoh" src="assets/img/icon.png" alt="logo">
+                <div class="navi navigas">
+                    <a href="homePage.html"><p class="naviga">HOME</p></a>
+                    <a href="products.html"><p class="naviga" style="font-weight: bold">PRODUCTS</p></a>
+                    <a href="submit.html"><p class="naviga">SUBMIT</p></a>
+                </div>
+            </nav>
+            <h1 class="produk" style="letter-spacing: 0"><a href="products.html">Shopping Cart</a></h1>
+        </header>
+        <main class="mainn">
+            <div class="miring navigas">
+                <a href="about.html"><span class="atur">ABOUT US</span></a>
+                <span class="atur">•</span>
+                <a href="contact.html"><span class="atur">CONTACT US</span></a>
+            </div>
+            <section>
+                <div class="container" style="margin-top: 5%; margin-bottom: 5%; position: relative">
+	               <table id="cart" class="table table-hover table-condensed">
+    				<thead>
+						<tr>
+							<th style="width:50%">Product</th>
+							<th style="width:10%">Price</th>
+							<th style="width:8%">Quantity</th>
+							<th style="width:22%" class="text-center">Subtotal</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td data-th="Product">
+								<div class="row">
+									<div class="col-sm-2 hidden-xs"><img src="assets/img/ear1.jpg" alt="..." width="130%" class="img-responsive"/></div>
+									<div class="col-sm-10">
+										<h4 class="nomargin">La-la Earrings</h4>
+										<p>This kind of earrings really suit for bohemian theme of occasion. It's catchy and can make you the center of attention. This earrings will be perfect if you combine it with plain clothes.</p>
+									</div>
+								</div>
+							</td>
+							<td data-th="Price" style="font-size: 1.2vw"><input type="text" value="Rp. 140.000" id="subtotal1" style="border: none; background: none;" readonly disabled></td>
+							<td data-th="Quantity">
+								<input type="number" class="form-control text-center" id="banyak1" min="1" max="5"  value="1">
+							</td>
+							<td data-th="Subtotal" class="text-center"><input type="text" id="totall1" readonly style="border: none; background: none;" value="Rp. 140.000"></td>
+						</tr>
+					</tbody>
+                       <tbody>
+						<tr>
+							<td data-th="Product">
+								<div class="row">
+									<div class="col-sm-2 hidden-xs"><img src="assets/img/top1.jpg" alt="..." width="130%" class="img-responsive"/></div>
+									<div class="col-sm-10">
+										<h4 class="nomargin">Soft Floral Dress</h4>
+										<p>Flower pattern makes this dress look girly. The sabrina style make you looks more sexy.</p>
+									</div>
+								</div>
+							</td>
+							<td data-th="Price" style="font-size: 1.2vw"><input type="text" value="Rp. 299.000" id="subtotal2" style="border: none; background: none;" readonly></td>
+							<td data-th="Quantity">
+								<input type="number" class="form-control text-center" id="banyak2" min="1" max="5" value="1">
+							</td>
+							<td data-th="Subtotal" class="text-center"><input type="text" id="totall2" readonly style="border: none; background: none;" value="Rp. 299.000"></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr class="visible-xs">
+							<td class="text-center"><strong>Total<span class="spanNews"> </span><input type="text" id="totalnya" style="border: none; background: none" readonly value="Rp. 439.000"></strong></td>
+						</tr>
+						<tr>
+							<td><a href="products.html" class="btn"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
+							<td colspan="2" class="hidden-xs"></td>
+                            <td><a class="btn btn-block" style="background: pink; border: 1px solid grey" onclick="bayarlah()">Checkout <i class="fa fa-angle-right"></i></a></td>
+							
+						</tr>
+					</tfoot>
+                    </table>
+                </div>
+            </section>
+        </main>
+        <div id="nutupinAja">
+        
+        </div>
+        <div class="rincian" id="maubayar">
+            <span class="closePop" onclick="gamaubayar()">x</span>
+            <h2>Checkout</h2>
+            <div class="container">
+                <form class="bayar">
+                <div class="row">
+                    <div class="col">
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Name</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Type your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Phone number</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Type your phone number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Address</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Type your home address" rows="3" required></textarea>
+                    </div>
+                        <div class="form-row">
+                        <div class="col-7">
+                          <input type="text" class="form-control" placeholder="City" required>
+                        </div>
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="State" required>
+                        </div>
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="Zip" required>
+                        </div>
+                    </div>
+                    </div>
+                        <div class="col">
+                    <h4 class="payy">Payment</h4>
+                    <div class="d-block my-3">
+                  <div class="custom-control custom-radio">
+                    <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
+                    <label class="custom-control-label" for="credit">Credit card</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                    <label class="custom-control-label" for="debit">Debit card</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                    <label class="custom-control-label" for="paypal">Paypal</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="cc-name">Name on card</label>
+                    <input type="text" class="form-control" id="cc-name" placeholder="" required="">
+                    <small class="text-muted" style="font-family: 'Roboto Condensed', sans-serif;">Full name as displayed on card</small>
+                    <div class="invalid-feedback">
+                      Name on card is required
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="cc-number">Credit card number</label>
+                    <input type="text" class="form-control" id="cc-number" placeholder="" required="">
+                    <div class="invalid-feedback">
+                      Credit card number is required
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-3 mb-3">
+                    <label for="cc-expiration">Expiration</label>
+                    <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
+                    <div class="invalid-feedback">
+                      Expiration date required
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <label for="cc-expiration">CVV</label>
+                    <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
+                    <div class="invalid-feedback">
+                      Security code required
+                    </div>
+                  </div>
+                </div>
+                    <hr class="mb-4">
+                <button class="btn btn-primary btn-lg btn-block" type="submit" style="font-family: 'Roboto Condensed', sans-serif; letter-spacing: 2px; background-color: pink; border: 1px solid white">Continue to checkout</button>
+                </div>
+                </div>
+                    </form>
+            </div>
+        </div>
+        <a href="#keatas"><button id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button></a>
+        <footer>
+            <div class="footNav">
+                <a href="homePage.html">HOME</a>
+                <a href="products.html" style="font-weight: bold;">PRODUCTS</a>
+                <a href="about.html">ABOUT</a>
+                <a href="contact.html">CONTACT</a>
+                <a href="submit.html">SUBMIT</a>
+                <div class="allright">© 2018 Rency Fashion. All rights reserved. Rency Fashion Community</div>
+                <div class="sosmed">
+                    <a class="linksos" href="mailto:wivinadaicy@yahoo.com"><i class="fas fa-envelope"></i></a>
+                    <a class="linksos" href="https://www.youtube.com/channel/UCX02eqhzSYFk5RNjHOvZ73g?view_as=subscriber"><i class="fab fa-youtube"></i></a>
+                    <a class="linksos" href="https://www.instagram.com/verenvalenciaa/"><i class="fab fa-instagram"></i></a>
+                    <a class="linksos" href="https://www.facebook.com/veren.valencia.3"><i class="fab fa-facebook-square"></i></a>
+                    <a class="linksos" href="https://twitter.com/ren_valenciaa?lang=en"><i class="fab fa-twitter-square"></i></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/masonry.pkgd.min.js"></script>
+    <script src="assets/js/charming.min.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/demo.js"></script>
+    <script src="assets/js/loadingscreen.js"></script>
+    <script src="assets/js/fungsi.js"></script>
+    <script src="assets/js/zoomDetail.js"></script>
+    <script src="assets/js/jquery.maskMoney.js"></script>
+    <script src="assets/js/jquery.priceformat.js"></script>
+    
+    <!--buat searh bar-->
+    <script>
+      $(".cari").click(function(){
+        $(".formnya").slideToggle();
+      });
+    </script>
+    
+</html>

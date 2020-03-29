@@ -1,0 +1,277 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>RENCY Fashion - Products</title>
+        
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+        <link rel="stylesheet" type="text/css" href="assets/css/base.css" />
+        <link rel="stylesheet" href="assets/css/loadingscreen.css">
+        <link rel="stylesheet" href="assets/css/buttonStore.css">
+        
+        <link rel="icon" href="assets/img/fullicon.png" type="image/x-icon">
+        
+        <!--pure.io-->
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+        
+        <!--JQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        
+        <!--Font awesome-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+		
+        <!--Google font-->
+		<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    </head>
+     <div class="preload" id="preload">
+        <div class="loaderFrame">
+            <img src="assets/img/fullicon.png" class="loader1">
+            <img src="assets/img/icon.png" class="loader2">
+        </div>
+    </div>
+    <section class="searchh">
+        <form class="formnya">
+            <p>RENCY FASHION</p>
+            <input type="search" class="inputny" placeholder="What would you like to search for?" />
+            <button type="submit" class="sbtn fa fa-search" style="font-size: 20pt;"></button>
+        </form>
+        <div class="topp">
+            <img src="assets/img/segitiga.png" class="cari">
+        </div>
+    </section>
+    <body>
+        <header class="headProd" id="keatas">
+            <nav class="navs">
+                <img class="logoh" src="assets/img/icon.png" alt="logo">
+                <div class="navi navigas">
+                    <a href="homePage.html"><p class="naviga">HOME</p></a>
+                    <a href="products.html"><p class="naviga" style="font-weight: bold">PRODUCTS</p></a>
+                    <a href="submit.html"><p class="naviga">SUBMIT</p></a>
+                </div>
+            </nav>
+            <h1 class="produk"><a href="products.html">PRODUCTS</a><span class="bread"> >> Bottom</span></h1>
+        </header>
+        <main class="mainn">
+            <div class="miring navigas">
+                <a href="about.html"><span class="atur">ABOUT US</span></a>
+                <span class="atur">•</span>
+                <a href="contact.html"><span class="atur">CONTACT US</span></a>
+            </div>
+            <section>
+                <div class="container" align="center" style="margin-top: 5%;">
+                    <div class="row">
+                        <div class="col">
+                            <div class="gridStore" onmouseover="tombolEar1muncul()" onmouseout="tombolEar1hilang()">
+                                    <img src="assets/img/bot1.jpg" class="imgStore">
+                                <p class="namanya">Flower Power Skirt</p>
+                                    <p class="autor">Rp. 499.000,-<br>Designed by. Stevie</p>
+                                <div class="dalem" id="ear1">
+                                    
+                                    <button class="btn btn-1 btn-1e"onclick="nampilinPop1()">DETAILS</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="gridStore" onmouseover="tombolEar2muncul()" onmouseout="tombolEar2hilang()">
+                                    <img src="assets/img/bot2.jpg" class="imgStore">
+                                <p class="namanya">Denim Skirt</p>
+                                    <p class="autor">Rp. 350.000,-<br>Designed by. Melissa</p>
+                                <div class="dalem" id="ear2">
+                                    <button class="btn btn-1 btn-1e"onclick="nampilinPop2()">DETAILS</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="gridStore" onmouseover="tombolEar3muncul()" onmouseout="tombolEar3hilang()">
+                                    <img src="assets/img/bot3.jpg" class="imgStore">
+                                <p class="namanya">Denim Shorts</p>
+                                    <p class="autor">Rp. 290.000,-<br>Designed by. Hana</p>
+                                <div class="dalem" id="ear3">
+                                    
+                                    <button class="btn btn-1 btn-1e"onclick="nampilinPop3()">DETAILS</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="gridStore" onmouseover="tombolEar4muncul()" onmouseout="tombolEar4hilang()">
+                                    <img src="assets/img/bot4.jpg" class="imgStore">
+                                <p class="namanya">Plaid Skirt</p>
+                                    <p class="autor">Rp. 420.000,-<br>Designed by. Catherine</p>
+                                <div class="dalem" id="ear4">
+                                    
+                                    <button class="btn btn-1 btn-1e"onclick="nampilinPop4()">DETAILS</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="gridStore" onmouseover="tombolEar5muncul()" onmouseout="tombolEar5hilang()">
+                                    <img src="assets/img/bot5.jpg" class="imgStore">
+                                <p class="namanya">Bluish Pencil Skirt</p>
+                                    <p class="autor">Rp. 520.000,-<br>Designed by. Karen</p>
+                                <div class="dalem" id="ear5">
+                                    <button class="btn btn-1 btn-1e"onclick="nampilinPop5()">DETAILS</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="gridStore" onmouseover="tombolEar6muncul()" onmouseout="tombolEar6hilang()">
+                                    <img src="assets/img/bot6.jpg" class="imgStore">
+                                <p class="namanya">Stripe Pants</p>
+                                    <p class="autor">Rp. 460.000,-<br>Designed by. Livia</p>
+                                <div class="dalem" id="ear6">
+                                    <button class="btn btn-1 btn-1e"onclick="nampilinPop6()">DETAILS</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <div class="popUp" id="popup">
+            
+        </div>
+        <div class="pop" id="pop1">
+            <span class="closePop" onclick="hilanginPop1()";>x</span>
+            <div id="popItem1" class="popupDalem">
+                <h2>Flower Power Skirt</h2>
+                <p class="designerDalem">Designed by Stevie</p>
+                <p class="hargaDalem">Rp. 499.000,-</p>
+                <p>Blooming with opulent femininity yet structured enough for versatile styling, you'll treasure the Flower Power Skirt. The flower pattern makes a true statement for day or night, bringing whimsy and fun to even the most simple look. The skirt sits at the waist and is fully lined in soft satin.</p>
+                <a class="pure-button keranjang" href="keranjang.html">
+                    <i class="fa fa-shopping-cart fa-lg"></i>
+                    Buy
+                </a>
+                <div class="tiles">
+                    <div class="tile imagePop" data-scale="1.6" data-image="assets/img/bot1.jpg"></div>
+                </div>
+            </div>
+        </div>
+        <div class="pop" id="pop2">
+            <span class="closePop" onclick="hilanginPop2()";>x</span>
+            <div id="popItem1" class="popupDalem">
+                <h2>Denim Skirt</h2>
+                <p class="designerDalem">Designed by Melissa</p>
+                <p class="hargaDalem">Rp. 350.000,-</p>
+                <p>The perfect skirt for a rebel spirit.Denim skirts are essential to any summer wardrobe. They add that casual cool feel that everyone wants. They add a touch of feminine rock and roll.</p>
+                <a class="pure-button keranjang" href="keranjang.html">
+                    <i class="fa fa-shopping-cart fa-lg"></i>
+                    Buy
+                </a>
+                <div class="tiles">
+                    <div class="tile imagePop" data-scale="1.6" data-image="assets/img/bot2.jpg"></div>
+                </div>
+            </div>
+        </div>
+        <div class="pop" id="pop3">
+            <span class="closePop" onclick="hilanginPop3()";>x</span>
+            <div id="popItem1" class="popupDalem">
+                <h2>Denim Shorts</h2>
+                <p class="designerDalem">Designed by Hana</p>
+                <p class="hargaDalem">Rp. 290.000,-</p>
+                <p>smart and stylish in these slim fitting essentials. Crafted in a stretch cotton blend, these lightweight pants offer structure and wearable style options to your daily outfitting.</p>
+                <a class="pure-button keranjang" href="keranjang.html">
+                    <i class="fa fa-shopping-cart fa-lg"></i>
+                    Buy
+                </a>
+                <div class="tiles">
+                    <div class="tile imagePop" data-scale="1.6" data-image="assets/img/bot3.jpg"></div>
+                </div>
+            </div>
+        </div>
+        <div class="pop" id="pop4">
+            <span class="closePop" onclick="hilanginPop4()";>x</span>
+            <div id="popItem1" class="popupDalem">
+                <h2>Plaid Skirt</h2>
+                <p class="designerDalem">Designed by Catherine</p>
+                <p class="hargaDalem">Rp. 420.000,-</p>
+                <p>With a touch of green the Plaid Skirt is a fresh take on the everyday pencil skirt. 
+                You'll love the structured fit and soft finish. </p>
+                <a class="pure-button keranjang" href="keranjang.html">
+                    <i class="fa fa-shopping-cart fa-lg"></i>
+                    Buy
+                </a>
+                <div class="tiles">
+                    <div class="tile imagePop" data-scale="1.6" data-image="assets/img/bot4.jpg"></div>
+                </div>
+            </div>
+        </div>
+        <div class="pop" id="pop5">
+            <span class="closePop" onclick="hilanginPop5()";>x</span>
+            <div id="popItem1" class="popupDalem">
+                <h2>Bluish Pencil Skirt</h2>
+                <p class="designerDalem">Designed by Karen</p>
+                <p class="hargaDalem">Rp. 520.000,-</p>
+                <p>An essential skirt for every wardrobe, the Bluish is a timeless and sleek favourite. The elegant skirt fastens with a back zipper. </p>
+                <a class="pure-button keranjang" href="keranjang.html">
+                    <i class="fa fa-shopping-cart fa-lg"></i>
+                    Buy
+                </a>
+                <div class="tiles">
+                    <div class="tile imagePop" data-scale="1.6" data-image="assets/img/bot5.jpg"></div>
+                </div>
+            </div>
+        </div>
+        <div class="pop" id="pop6">
+            <span class="closePop" onclick="hilanginPop6()";>x</span>
+            <div id="popItem1" class="popupDalem">
+                <h2>Stripe Pants</h2>
+                <p class="designerDalem">Designed by Livia</p>
+                <p class="hargaDalem">Rp. 460.000,-</p>
+                <p>In a relaxed wide-leg fit, these Stripe Pants are crafted from a ligthweight crepe to elegantly skim the body. Match yours with the coordinating Stripe Pants for the ultimate in workweek style.
+                </p>
+                <a class="pure-button keranjang" href="keranjang.html">
+                    <i class="fa fa-shopping-cart fa-lg"></i>
+                    Buy
+                </a>
+                <div class="tiles">
+                    <div class="tile imagePop" data-scale="1.6" data-image="assets/img/bot6.jpg"></div>
+                </div>
+            </div>
+        </div>
+        <a href="#keatas"><button id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button></a>
+        <footer>
+            <div class="footNav">
+                <a href="homePage.html">HOME</a>
+                <a href="products.html" style="font-weight: bold;">PRODUCTS</a>
+                <a href="about.html">ABOUT</a>
+                <a href="contact.html">CONTACT</a>
+                <a href="submit.html">SUBMIT</a>
+                <div class="allright">© 2018 Rency Fashion. All rights reserved. Rency Fashion Community</div>
+                <div class="sosmed">
+                    <a class="linksos" href="mailto:wivinadaicy@yahoo.com"><i class="fas fa-envelope"></i></a>
+                    <a class="linksos" href="https://www.youtube.com/channel/UCX02eqhzSYFk5RNjHOvZ73g?view_as=subscriber"><i class="fab fa-youtube"></i></a>
+                    <a class="linksos" href="https://www.instagram.com/verenvalenciaa/"><i class="fab fa-instagram"></i></a>
+                    <a class="linksos" href="https://www.facebook.com/veren.valencia.3"><i class="fab fa-facebook-square"></i></a>
+                    <a class="linksos" href="https://twitter.com/ren_valenciaa?lang=en"><i class="fab fa-twitter-square"></i></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/masonry.pkgd.min.js"></script>
+    <script src="assets/js/charming.min.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/demo.js"></script>
+    <script src="assets/js/loadingscreen.js"></script>
+    <script src="assets/js/fungsi.js"></script>
+    <script src="assets/js/zoomDetail.js"></script>
+    
+    <!--buat searh bar-->
+    <script>
+      $(".cari").click(function(){
+        $(".formnya").slideToggle();
+      });
+    </script>
+    
+</html>

@@ -1,0 +1,275 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>RENCY Fashion - Products</title>
+        
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+        <link rel="stylesheet" type="text/css" href="assets/css/base.css" />
+        <link rel="stylesheet" href="assets/css/loadingscreen.css">
+        <link rel="stylesheet" href="assets/css/buttonStore.css">
+        
+        <link rel="icon" href="assets/img/fullicon.png" type="image/x-icon">
+        
+         <!--pure.io-->
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+        
+        <!--JQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        
+        <!--Font awesome-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+		
+        <!--Google font-->
+		<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    </head>
+     <div class="preload" id="preload">
+        <div class="loaderFrame">
+            <img src="assets/img/fullicon.png" class="loader1">
+            <img src="assets/img/icon.png" class="loader2">
+        </div>
+    </div>
+    <section class="searchh">
+        <form class="formnya">
+            <p>RENCY FASHION</p>
+            <input type="search" class="inputny" placeholder="What would you like to search for?" />
+            <button type="submit" class="sbtn fa fa-search" style="font-size: 20pt;"></button>
+        </form>
+        <div class="topp">
+            <img src="assets/img/segitiga.png" class="cari">
+        </div>
+    </section>
+    <body>
+        <header class="headProd" id="keatas">
+            <nav class="navs">
+                <img class="logoh" src="assets/img/icon.png" alt="logo">
+                <div class="navi navigas">
+                    <a href="homePage.html"><p class="naviga">HOME</p></a>
+                    <a href="products.html"><p class="naviga" style="font-weight: bold">PRODUCTS</p></a>
+                    <a href="submit.html"><p class="naviga">SUBMIT</p></a>
+                </div>
+            </nav>
+            <h1 class="produk"><a href="products.html">PRODUCTS</a><span class="bread"> >> Glasses</span></h1>
+        </header>
+        <main class="mainn">
+            <div class="miring navigas">
+                <a href="about.html"><span class="atur">ABOUT US</span></a>
+                <span class="atur">•</span>
+                <a href="contact.html"><span class="atur">CONTACT US</span></a>
+            </div>
+            <section>
+                <div class="container" align="center" style="margin-top: 5%;">
+                    <div class="row">
+                        <div class="col">
+                            <div class="gridStore" onmouseover="tombolEar1muncul()" onmouseout="tombolEar1hilang()">
+                                    <img src="assets/img/sun1.jpg" class="imgStore">
+                                <p class="namanya">Boo Glasses</p>
+                                    <p class="autor">Rp. 199.000,-<br>Designed by. Daicy</p>
+                                <div class="dalem" id="ear1">
+                                    
+                                    <button class="btn btn-1 btn-1e" onclick="nampilinPop1()">DETAILS</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="gridStore" onmouseover="tombolEar2muncul()" onmouseout="tombolEar2hilang()">
+                                    <img src="assets/img/sun2.jpg" class="imgStore">
+                                <p class="namanya">Pink Shades</p>
+                                    <p class="autor">Rp. 350.000,-<br>Designed by. Venecia</p>
+                                <div class="dalem" id="ear2">
+                                    <button class="btn btn-1 btn-1e"onclick="nampilinPop2()">DETAILS</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="gridStore" onmouseover="tombolEar3muncul()" onmouseout="tombolEar3hilang()">
+                                    <img src="assets/img/sun3.jpg" class="imgStore">
+                                <p class="namanya">Cat Eye Sunglasses</p>
+                                    <p class="autor">Rp. 380.000,-<br>Designed by. Lucy</p>
+                                <div class="dalem" id="ear3">
+                                    
+                                    <button class="btn btn-1 btn-1e" onclick="nampilinPop3()">DETAILS</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="gridStore" onmouseover="tombolEar4muncul()" onmouseout="tombolEar4hilang()">
+                                    <img src="assets/img/sun4.jpg" class="imgStore">
+                                <p class="namanya">Goldie Sunglasses</p>
+                                    <p class="autor">Rp. 220.000,-<br>Designed by. Elizabeth</p>
+                                <div class="dalem" id="ear4">
+                                    
+                                    <button class="btn btn-1 btn-1e" onclick="nampilinPop4()">DETAILS</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="gridStore" onmouseover="tombolEar5muncul()" onmouseout="tombolEar5hilang()">
+                                    <img src="assets/img/sun5.jpeg" class="imgStore">
+                                <p class="namanya">Mint Shades</p>
+                                    <p class="autor">Rp. 280.000,-<br>Designed by. Isabelle</p>
+                                <div class="dalem" id="ear5">
+                                    <button class="btn btn-1 btn-1e"onclick="nampilinPop5()">DETAILS</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="gridStore" onmouseover="tombolEar6muncul()" onmouseout="tombolEar6hilang()">
+                                    <img src="assets/img/sun6.jpg" class="imgStore">
+                                <p class="namanya">Boyish Shades</p>
+                                    <p class="autor">Rp. 150.000,-<br>Designed by. Michelle</p>
+                                <div class="dalem" id="ear6">
+                                    <button class="btn btn-1 btn-1e"onclick="nampilinPop6()">DETAILS</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+         <div class="popUp" id="popup">
+            
+        </div>
+        <div class="pop" id="pop1">
+            <span class="closePop" onclick="hilanginPop1()";>x</span>
+            <div id="popItem1" class="popupDalem">
+                <h2>Boo Glasses</h2>
+                <p class="designerDalem">Designed by Daicy</p>
+                <p class="hargaDalem">Rp. 199.000,-</p>
+                <p>Peek-a-boo! You definitely will look cute with this glasses. Instead of that, this glasses also make your eyes look bigger.</p>
+                <a class="pure-button keranjang" href="keranjang.html">
+                    <i class="fa fa-shopping-cart fa-lg"></i>
+                    Buy
+                </a>
+                <div class="tiles">
+                    <div class="tile imagePop" data-scale="1.6" data-image="assets/img/sun1.jpg"></div>
+                </div>
+            </div>
+        </div>
+        <div class="pop" id="pop2">
+            <span class="closePop" onclick="hilanginPop2()";>x</span>
+            <div id="popItem1" class="popupDalem">
+                <h2>Pink Shades</h2>
+                <p class="designerDalem">Designed by Venecia</p>
+                <p class="hargaDalem">Rp. 350.000,-</p>
+                <p>Who doesn't love pink? This new shades will make your skintone look brighter. We recommend you guys to pair it with a neutral cloth.</p>
+                <a class="pure-button keranjang" href="keranjang.html">
+                    <i class="fa fa-shopping-cart fa-lg"></i>
+                    Buy
+                </a>
+                <div class="tiles">
+                    <div class="tile imagePop" data-scale="1.6" data-image="assets/img/sun2.jpg"></div>
+                </div>
+            </div>
+        </div>
+        <div class="pop" id="pop3">
+            <span class="closePop" onclick="hilanginPop3()";>x</span>
+            <div id="popItem1" class="popupDalem">
+                <h2>Cat Eye Sunglasses</h2>
+                <p class="designerDalem">Designed by Lucy</p>
+                <p class="hargaDalem">Rp. 380.000,-</p>
+                <p>For those who want to try a new style, cat eye sunglasses is one of the best option. Your face will look slimer but still edgy at the same time.</p>
+                <a class="pure-button keranjang" href="keranjang.html">
+                    <i class="fa fa-shopping-cart fa-lg"></i>
+                    Buy
+                </a>
+                <div class="tiles">
+                    <div class="tile imagePop" data-scale="1.6" data-image="assets/img/sun3.jpg"></div>
+                </div>
+            </div>
+        </div>
+        <div class="pop" id="pop4">
+            <span class="closePop" onclick="hilanginPop4()";>x</span>
+            <div id="popItem1" class="popupDalem">
+                <h2>Goldie Sunglasses</h2>
+                <p class="designerDalem">Designed by Elizabeth</p>
+                <p class="hargaDalem">Rp. 220.000,-</p>
+                <p>This simple gold sunglasses is a pretty good idea to wear on summer. The color can suit any kind of clothes that you wear.</p>
+                <a class="pure-button keranjang" href="keranjang.html">
+                    <i class="fa fa-shopping-cart fa-lg"></i>
+                    Buy
+                </a>
+                <div class="tiles">
+                    <div class="tile imagePop" data-scale="1.6" data-image="assets/img/sun4.jpg"></div>
+                </div>
+            </div>
+        </div>
+        <div class="pop" id="pop5">
+            <span class="closePop" onclick="hilanginPop5()";>x</span>
+            <div id="popItem1" class="popupDalem">
+                <h2>Mint Shades</h2>
+                <p class="designerDalem">Designed by Isabelle</p>
+                <p class="hargaDalem">Rp. 280.000,-</p>
+                <p>Beside give you a cool look, it's also have a uv protection. Don't worry you will feel pretty and comfy at the same time.</p>
+                <a class="pure-button keranjang" href="keranjang.html">
+                    <i class="fa fa-shopping-cart fa-lg"></i>
+                    Buy
+                </a>
+                <div class="tiles">
+                    <div class="tile imagePop" data-scale="1.6" data-image="assets/img/sun5.jpeg"></div>
+                </div>
+            </div>
+        </div>
+        <div class="pop" id="pop6">
+            <span class="closePop" onclick="hilanginPop6()";>x</span>
+            <div id="popItem1" class="popupDalem">
+                <h2>Boyish Shades</h2>
+                <p class="designerDalem">Designed by Michelle</p>
+                <p class="hargaDalem">Rp. 150.000,-</p>
+                <p>This is the best seller item of this month. Want to look like a "hypebeast"? Try this kind of sunglasses and pair it with your cool t-shirt.</p>
+                <a class="pure-button keranjang" href="keranjang.html">
+                    <i class="fa fa-shopping-cart fa-lg"></i>
+                    Buy
+                </a>
+                <div class="tiles">
+                    <div class="tile imagePop" data-scale="1.6" data-image="assets/img/sun6.jpg"></div>
+                </div>
+            </div>
+        </div>
+        <a href="#keatas"><button id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button></a>
+        <footer>
+            <div class="footNav">
+                <a href="homePage.html">HOME</a>
+                <a href="products.html" style="font-weight: bold;">PRODUCTS</a>
+                <a href="about.html">ABOUT</a>
+                <a href="contact.html">CONTACT</a>
+                <a href="submit.html">SUBMIT</a>
+                <div class="allright">© 2018 Rency Fashion. All rights reserved. Rency Fashion Community</div>
+                <div class="sosmed">
+                    <a class="linksos" href="mailto:wivinadaicy@yahoo.com"><i class="fas fa-envelope"></i></a>
+                    <a class="linksos" href="https://www.youtube.com/channel/UCX02eqhzSYFk5RNjHOvZ73g?view_as=subscriber"><i class="fab fa-youtube"></i></a>
+                    <a class="linksos" href="https://www.instagram.com/verenvalenciaa/"><i class="fab fa-instagram"></i></a>
+                    <a class="linksos" href="https://www.facebook.com/veren.valencia.3"><i class="fab fa-facebook-square"></i></a>
+                    <a class="linksos" href="https://twitter.com/ren_valenciaa?lang=en"><i class="fab fa-twitter-square"></i></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/masonry.pkgd.min.js"></script>
+    <script src="assets/js/charming.min.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/demo.js"></script>
+    <script src="assets/js/loadingscreen.js"></script>
+    <script src="assets/js/fungsi.js"></script>
+    <script src="assets/js/zoomDetail.js"></script>
+    
+    <!--buat searh bar-->
+    <script>
+      $(".cari").click(function(){
+        $(".formnya").slideToggle();
+      });
+    </script>
+    
+</html>

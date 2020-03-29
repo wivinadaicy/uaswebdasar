@@ -1,0 +1,551 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>RENCY Fashion</title>
+        
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+        <link rel="stylesheet" href="assets/css/loadingscreen.css">
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="icon" href="assets/img/fullicon.png" type="image/x-icon">
+        
+        <!--data aos-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        
+        <!--JQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+       
+        <!--Font awesome-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+        
+        <!--Google font-->
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        
+        <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+        
+        <!--map-->
+        <script src="http://maps.googleapis.com/maps/api/js?key=&extension=.js"></script>
+        <script src="http://cdn.mapkit.io/v1/infobox.js"></script>
+        <link href="http://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+        <link href="http://cdn.mapkit.io/v1/infobox.css" rel="stylesheet" >
+        
+
+        <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+        html, body{
+          height: 100%;
+        }
+
+        .content {
+          box-sizing: border-box;
+          height: 100%;
+          background: #edeeef;
+            width: 100%;
+        }
+
+        .zipperable {
+          position: relative;
+          height: 70%;
+          width: 100%;
+          overflow: hidden;
+        }
+        .zipperable .header, .zipperable .footer {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: -125px;
+          border: 0 dotted #edeeef;
+          border-right-width: 25px;
+          border-right-color: #edeeef;
+          transition: all 1s;
+          background: black url(https://dl.dropboxusercontent.com/u/43643514/codepen/jeans-pattern.jpg); /*ini warna kain*/
+          background-size: cover;
+            z-index: 2;
+        }
+        .zipperable:hover .header, .zipperable:hover .footer {
+          left: -100%;
+          right: 100%;
+        }
+        .zipperable:hover .header {
+          top: -33%;
+          border-bottom-right-radius: 50%;
+        }
+        .zipperable:hover .footer {
+          bottom: -33%;
+          border-top-right-radius: 50%;
+        }
+        .zipperable .header {
+          bottom: 50%;
+          border-bottom-width: 25px;
+        }
+        .zipperable .footer {
+          top: 50%;
+          border-top-width: 25px;
+        }
+        .zipperable .zipper {
+          top: 50%;
+          right: -87.5px;
+          margin-top: -37.5px;
+          width: 100px;
+          height: 75px;
+          border-top-left-radius: 15% 50%;
+          border-bottom-left-radius: 15% 50%;
+          background: black; /*warna kancing zipper*/
+          transition: all 1s;
+        }
+        .zipperable .zipper, .zipperable .zipper:before, .zipperable .zipper:after, .zipperable .zipper * {
+          content: "";
+          display: block;
+          z-index: 1;
+          position: absolute;
+          top: 50%;
+        }
+        .zipperable .zipper:before {
+          width: 87.5px;
+          height: 87.5px;
+          margin-top: -43.75px;
+          right: -26.25px;
+          transform: rotate(45deg);
+          border-radius: 30%;
+          border-top-right-radius: 50%;
+          background: #2e2e2e;
+        }
+        .zipperable:hover .zipper {
+          transition-duration: 0.8s;
+          right: 120%;
+        }
+        
+            .visi{
+                font-family: 'Poppins', sans-serif;
+                transform:rotate(270deg);
+                font-size: 25pt;
+                color: #262626;
+                letter-spacing: 5px;
+                position: absolute;
+                top: 22%;
+                left: 5%;
+                font-weight: bold;
+            }
+            .misi{
+                font-family: 'Poppins', sans-serif;
+                transform:rotate(90deg);
+                font-size: 25pt;
+                color: #262626;
+                letter-spacing: 5px;
+                position: absolute;
+                bottom: 19%;
+                right: 5%;
+                font-weight: bold;
+            }
+            .content p{
+                font-family: 'Poppins', sans-serif;
+                font-size: 16pt;
+                color: black;
+                width: 60%;
+                position: absolute;
+            }
+            .hanger{
+                position: absolute;
+                bottom: 4%;
+                left: 7%;
+                width: 13%;
+                transform: rotate(30deg);
+            }
+            .mom{
+                position: absolute;
+                top: 1%;
+                right: 10%;
+                width: 12%;
+            }
+            #mapkit-5364 {
+            height: 60%;
+            width: 100%;
+          }
+    </style>
+        
+    </head>
+    <div class="preload" id="preload">
+            <div class="loaderFrame">
+                <img src="assets/img/fullicon.png" class="loader1">
+                <img src="assets/img/icon.png" class="loader2">
+            </div>
+    </div>
+    <section class="searchh">
+        <form class="formnya">
+            <p>RENCY FASHION</p>
+            <input type="search" class="inputny" placeholder="What would you like to search for?" />
+            <button type="submit" class="sbtn fa fa-search" style="font-size: 20pt;"></button>
+        </form>
+        <div class="topp">
+            <img src="assets/img/segitiga.png" class="cari">
+        </div>
+    </section>
+    <body>
+        <nav class="navs">
+            <img class="logoh" src="assets/img/icon.png" alt="logo">
+            <div class="navi navigas">
+                <a href="homePage.html"><p class="naviga">HOME</p></a>
+                <a href="products.html"><p class="naviga">PRODUCTS</p></a>
+                <a href="submit.html"><p class="naviga">SUBMIT</p></a>
+            </div>
+        </nav>
+        <header id="about" style="overflow: hidden;">
+            <div class="miring navigas">
+                <a href="about.html"><span class="atur" style="font-weight: bold">ABOUT US</span></a>
+                <span class="atur">•</span>
+                <a href="contact.html"><span class="atur">CONTACT US</span></a>
+            </div>
+            <div class="headerAbout" id="keatas">
+                <img src="assets/img/wardrobe.jpg" class="ward">
+                <h1 class="animated flash">WHO IS RENCY?</h1>
+                <div class="hitam"></div>
+            </div>
+        </header>
+        <main>
+            <div id="mainAbout">
+                <img data-aos="zoom-in-right" data-aos-duration="800"src="assets/img/fullicon.png" class="img-fluid img-thumbnail">
+                <h2 data-aos="zoom-in-down">Why We Here?</h2>
+                <p data-aos="zoom-in-up"data-aos-duration="1000">Rency is a woman’s fashion community which offers a wide range of fashion information from all over the world. The community was built in 2014 by two young ladies named Veren Valencia and Wivina Daicy. That’s why we give the name of this community as Rency. Because we take the name from the founders. <br>
+                It is the world’s largest fashion community. Beside giving information and ideas about fashion. Rency also provide store to support your outfit collection. To boost up woman’s ideas and confident, Rency has a submission section that allow woman to share their outfit ideas by submit their photos. The purpose of it is giving opportunities to them to be the inspiration for others.</p>
+            </div>
+        </main>
+        <section>
+            <div class='zipperable'>
+                <div class='zipper'></div>
+                <div class='header'></div>
+                <section class='content'>
+                    <img src="assets/img/hanger.png" class="hanger" alt="hanger">
+                    <img src="assets/img/mom.png" class="mom" alt="mom">
+                    <h2 class="visi">VISION</h2>
+                    <p style="top: 20%; left: 15%;" class="lead">To become the number one fashion community that would inspire woman to learn about fashion sense based on worldwide trend</p>
+                    <h2 class="misi">MISSION</h2>
+                    <p style="bottom: 12%; right: 15%;" class="lead">1. To give an opportunity and encourages the creativity of each woman through style and fashion.<br>
+                    2.To provide fashion news and fashion store that support woman’s fashion ideas.
+                    </p>
+              </section>
+              <div class='footer'></div>
+            </div>
+        </section>
+        <section>
+            <div class="container-fluid blue-bg">
+                <div class="container judulBesar">
+                  <h2 data-aos="zoom-in">OUR JOURNEY</h2>
+                  <img src="assets/img/spatup.png" width="10%;" style="position: absolute; top: 0%; right: 40%;transform: scaleX(-1);">
+                  <hr color="white" style="width:80vw; height: 0.1vw; margin-top: 35px;">
+                  <br>
+                <!--first section-->
+                <div class="row align-items-center how-it-works">
+                  <div class="col-2 text-center bottom">
+                    <div class="circle">2014</div>
+                  </div>
+                  <div class="col-6">
+                    <h5 class="timelineJudul" data-aos="zoom-in-right">Starting</h5>
+                    <p class="lead" data-aos="fade-down-right">Rency was built in 2014 by two young ladies named Veren Valencia and Wivina Daicy. Veren and Wivina found that fashion is one of the important aspect in our daily life.</p>
+                  </div>
+                </div>
+                <!--path between 1-2-->
+                <div class="row timeline">
+                  <div class="col-2">
+                    <div class="corner top-right"></div>
+                  </div>
+                  <div class="col-8">
+                    <hr/>
+                  </div>
+                  <div class="col-2">
+                    <div class="corner left-bottom"></div>
+                  </div>
+                </div>
+                <!--second section-->
+                <div class="row align-items-center justify-content-end how-it-works">
+                  <div class="col-6 text-right">
+                    <h5 class="timelineJudul"data-aos="zoom-in-left">First Fashion Show</h5>
+                    <p class="lead" data-aos="fade-up-left">Year by year, Rency finally got an opportunity to show their collections in Paris Fashion Week 2015 and won best designer community awards. </p>
+                  </div>
+                  <div class="col-2 text-center full">
+                    <div class="circle">2015</div>
+                  </div>
+                </div>
+                <!--path between 2-3-->
+                <div class="row timeline">
+                  <div class="col-2">
+                    <div class="corner right-bottom"></div>
+                  </div>
+                  <div class="col-8">
+                    <hr/>
+                  </div>
+                  <div class="col-2">
+                    <div class="corner top-left"></div>
+                  </div>
+                </div>
+                <!--third section-->
+                <div class="row align-items-center how-it-works">
+                  <div class="col-2 text-center top">
+                    <div class="circle">2017</div>
+                  </div>
+                  <div class="col-6">
+                    <h5 class="timelineJudul"data-aos="zoom-in-right">Online Community</h5>
+                    <p class="lead" data-aos="fade-up-right">Looking at the growth of internet world, we decided to make an online community that allows ladies to share their outfit inspiration.</p>
+                      <br>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+        <section>
+            <div id="ourTeam">
+                <h2 data-aos="zoom-in">OUR TEAM</h2>
+                <a href="https://www.instagram.com/wivinadaicy/?hl=id" target="_blank"><img src="assets/img/wivina.jpg" class="foto1 img-thumbnail" onmouseover="munculAku()" onmouseout="hilangAku()"></a>
+                <img src="assets/img/bubble.png" class="bubble1" id="aku">
+                <div class="aboutSaya1" id="deskrip1">
+                    Name
+                    <br>
+                    <b>WIVINA DAICY</b>
+                    <br>
+                    <br>
+                    Email
+                    <br>
+                    <b style="color: grey">wivinadaicy@yahoo.com</b>
+                </div>
+                <a href="https://www.instagram.com/verenvalenciaa/?hl=id" target="_blank"><img src="assets/img/veren.jpg" class="foto2 img-thumbnail" onmouseover="munculKamu()" onmouseout="hilangKamu()"></a>
+                <img src="assets/img/bubble.png" class="bubble2" id="kamu">
+                <div class="aboutSaya2" id="deskrip2">
+                    Name
+                    <br>
+                    <b>VEREN VALENCIA</b>
+                    <br>
+                    <br>
+                    Email
+                    <br>
+                    <b style="color: grey">verenvalenciaa@gmail.com</b>
+                </div>
+                <div class="aboutKita" id="kita" data-aos="flip-up">
+                    <h3>Hello!</h3>
+                    <center><p>Fashion is about self expression. <br>We, Rency's Team want to collaborate ideas with you.<br>"Don't know thus don't like"</p></center>
+                </div>
+                <h4 class="akuh" data-aos="flip-up">Founder</h4>
+                <h4 class="kamuh" data-aos="flip-up">Co-Founder</h4>
+                <div id="punyaku1">
+                    <p id="klikdes1">Click my photo to see my profile</p>
+                    <img src="assets/img/gifarrow.gif" width="5%" id="panah1">
+                </div>
+                <div id="punyaku2">
+                    <p id="klikdes2">Click my photo to see my profile</p>
+                    <img src="assets/img/gifarrow.gif" width="5%" id="panah2">
+                </div>
+            </div>
+        </section>
+        <div id="mapkit-5364"></div>
+        <a href="#keatas"><button id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button></a>
+        <footer>
+            <div class="footNav">
+                    <a href="homePage.html">Home</a>
+                    <a href="products.html">Products</a>
+                    <a href="about.html" style="font-weight: bold;">About</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="submit.html">Submit</a>
+                    <div class="allright">© 2018 Rency Fashion. All rights reserved. Rency Fashion Community</div>
+                    <div class="sosmed">
+                        <a class="linksos" href="mailto:wivinadaicy@yahoo.com"><i class="fas fa-envelope"></i></a>
+                        <a class="linksos" href="https://www.youtube.com/channel/UCX02eqhzSYFk5RNjHOvZ73g?view_as=subscriber"><i class="fab fa-youtube"></i></a>
+                        <a class="linksos" href="https://www.instagram.com/verenvalenciaa/"><i class="fab fa-instagram"></i></a>
+                        <a class="linksos" href="https://www.facebook.com/veren.valencia.3"><i class="fab fa-facebook-square"></i></a>
+                        <a class="linksos" href="https://twitter.com/ren_valenciaa?lang=en"><i class="fab fa-twitter-square"></i></a>
+                    </div>
+            </div>
+        </footer>
+    </body>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/js/loadingscreen.js"></script>
+    
+    <!--buat map-->
+    <script>
+          google.maps.event.addDomListener(window, 'load', init);
+            var map, markersArray = [];
+            function bindInfoWindow(marker, map, location) {
+              google.maps.event.addListener(marker, 'click', function() {
+                function close(location) {
+                  location.ib.close();
+                  location.infoWindowVisible = false;
+                  location.ib = null;
+                }
+                if (location.infoWindowVisible === true) {
+                  close(location);
+                } else {
+                  markersArray.forEach(function(loc, index) {
+                    if (loc.ib && loc.ib !== null) {
+                      close(loc);
+                    }
+                  });
+                  var boxText = document.createElement('div');
+                  boxText.style.cssText = 'background: #fff;';
+                  boxText.classList.add('md-whiteframe-2dp');
+
+                  function buildPieces(location, el, part, icon) {
+                    if (location[part] === '') {
+                      return '';
+                    } else if (location.iw[part]) {
+                      switch (el) {
+                        case 'photo':
+                          if (location.photo) {
+                            return '<div class="iw-photo" style="background-image: url(' + location.photo + ');"></div>';
+                          } else {
+                            return '';
+                          }
+                          break;
+                        case 'iw-toolbar':
+                          return '<div class="iw-toolbar"><h3 class="md-subhead">' + location.title + '</h3></div>';
+                          break;
+                        case 'div':
+                          switch (part) {
+                            case 'email':
+                              return '<div class="iw-details"><i class="material-icons" style="color:#4285f4;"><img src="//cdn.mapkit.io/v1/icons/' + icon + '.svg"/></i><span><a href="mailto:' + location.email + '" target="_blank">' + location.email + '</a></span></div>'
+                              break;
+                            case 'web':
+                              return '<div class="iw-details"><i class="material-icons" style="color:#4285f4;"><img src="//cdn.mapkit.io/v1/icons/' + icon + '.svg"/></i><span><a href="' + location.web + '" target="_blank">' + location.web_formatted + '</a></span></div>';
+                              break;
+                            case 'desc':
+                              return '<label class="iw-desc" for="cb_details"><input type="checkbox" id="cb_details"/><h3 class="iw-x-details">Details</h3><i class="material-icons toggle-open-details"><img src="//cdn.mapkit.io/v1/icons/' + icon + '.svg"/></i><p class="iw-x-details">' + location.desc + '</p></label>';
+                              break;
+                            default:
+                              return '<div class="iw-details"><i class="material-icons"><img src="//cdn.mapkit.io/v1/icons/' + icon + '.svg"/></i><span>' + location.part + '</span></div>';
+                              break;
+                          }
+                          break;
+                        case 'open_hours':
+                          var items = '';
+                          if (location.open_hours.length > 0) {
+                            for (var i = 0; i < location.open_hours.length; ++i) {
+                              if (i !== 0) {
+                                items += '<li><strong>' + location.open_hours[i].day + '</strong><strong>' + location.open_hours[i].hours + '</strong></li>';
+                              }
+                              var first = '<li><label for="cb_hours"><input type="checkbox" id="cb_hours"/><strong>location.open_hours[0].day</strong><strong>' + location.open_hours[0].hours + '</strong><i class="material-icons toggle-open-hours"><img src="//cdn.mapkit.io/v1/icons/keyboard_arrow_down.svg"/></i><ul>' + items + '</ul></label></li>';
+                            }
+                            return '<div class="iw-list"><i class="material-icons first-material-icons" style="color:#4285f4;"><img src="//cdn.mapkit.io/v1/icons/' + icon + '.svg"/></i><ul>' + first + '</ul></div>';
+                          } else {
+                            return '';
+                          }
+                          break;
+                      }
+                    } else {
+                      return '';
+                    }
+                  }
+                  boxText.innerHTML = buildPieces(location, 'photo', 'photo', '') + buildPieces(location, 'iw-toolbar', 'title', '') + buildPieces(location, 'div', 'address', 'location_on') + buildPieces(location, 'div', 'web', 'public') + buildPieces(location, 'div', 'email', 'email') + buildPieces(location, 'div', 'tel', 'phone') + buildPieces(location, 'div', 'int_tel', 'phone') + buildPieces(location, 'open_hours', 'open_hours', 'access_time') + buildPieces(location, 'div', 'desc', 'keyboard_arrow_down');
+                  var myOptions = {
+                    alignBottom: true,
+                    content: boxText,
+                    disableAutoPan: true,
+                    maxWidth: 0,
+                    pixelOffset: new google.maps.Size(-140, -40),
+                    zIndex: null,
+                    boxStyle: {
+                      opacity: 1,
+                      width: '280px'
+                    },
+                    closeBoxMargin: '0px 0px 0px 0px',
+                    infoBoxClearance: new google.maps.Size(1, 1),
+                    isHidden: false,
+                    pane: 'floatPane',
+                    enableEventPropagation: false
+                  };
+                  location.ib = new InfoBox(myOptions);
+                  location.ib.open(map, marker);
+                  location.infoWindowVisible = true;
+                }
+              });
+            }
+
+            function init() {
+              var mapOptions = {
+                center: new google.maps.LatLng(30.164353312985604, -92.05906077637076),
+                zoom: 10,gestureHandling: 'auto',fullscreenControl: false,zoomControl: true,
+                disableDoubleClickZoom: true,
+                
+                mapTypeControl: true,
+                mapTypeControlOptions: {
+                  style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+                },
+                scaleControl: true,
+                scrollwheel: true,
+                streetViewControl: true,
+                draggable: true,
+                clickableIcons: false,
+                fullscreenControlOptions: {
+                  position: google.maps.ControlPosition.TOP_RIGHT
+                },
+                zoomControlOptions: {
+                  position: google.maps.ControlPosition.RIGHT_BOTTOM
+                },
+                streetViewControlOptions: {
+                  position: google.maps.ControlPosition.RIGHT_BOTTOM
+                },
+                mapTypeControlOptions: {
+                  position: google.maps.ControlPosition.TOP_LEFT
+                },
+                
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                
+                styles: [],
+                
+              }
+              var mapElement = document.getElementById('mapkit-5364');
+              var map = new google.maps.Map(mapElement, mapOptions);
+              var locations = [{"title":"Rency Fashion","address":"Lafayette, LA, USA","desc":"","tel":"","int_tel":"","email":"","web":"","web_formatted":"","open":"","time":"","lat":30.2240897,"lng":-92.01984270000003,"photo":"","vicinity":"Lafayette","open_hours":"","marker":"assets/img/spatu.png","iw":{"address":true,"desc":true,"email":true,"enable":true,"int_tel":true,"open":true,"open_hours":true,"photo":true,"tel":true,"title":false,"web":true}}];
+              
+              for (i = 0; i < locations.length; i++) {
+                marker = new google.maps.Marker({
+                icon: locations[i].marker,
+                position: new google.maps.LatLng(locations[i].lat, locations[i].lng),
+                map: map,
+                title: locations[i].title,
+                address: locations[i].address,
+                desc: locations[i].desc,
+                tel: locations[i].tel,
+                int_tel: locations[i].int_tel,
+                vicinity: locations[i].vicinity,
+                open: locations[i].open,
+                open_hours: locations[i].open_hours,
+                photo: locations[i].photo,
+                time: locations[i].time,
+                email: locations[i].email,
+                web: locations[i].web,
+                iw: locations[i].iw
+              });
+
+              markersArray.push(marker);
+
+              if (locations[i].iw.enable === true){
+                bindInfoWindow(marker, map, locations[i]);
+              }
+            }
+            
+            }
+        </script>
+    
+    <!--buat data aos-->
+    <script>
+      AOS.init();
+    </script>
+    
+    <!--buat searh bar-->
+    <script>
+      $(".cari").click(function(){
+        $(".formnya").slideToggle();
+      });
+    </script>
+    <script src="assets/js/fungsi.js"></script>
+    
+</html>

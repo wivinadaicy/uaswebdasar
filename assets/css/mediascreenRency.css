@@ -1,0 +1,10 @@
+@media screen and (max-width:600px){
+    .navi{
+        top: 20px;
+        right:60px;
+    }
+    .envelope{
+        top:65%;
+        right: 1%;
+    }
+}

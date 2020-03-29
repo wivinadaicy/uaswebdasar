@@ -1,0 +1,274 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>RENCY Fashion - Products</title>
+        
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+        <link rel="stylesheet" type="text/css" href="assets/css/base.css" />
+        <link rel="stylesheet" href="assets/css/loadingscreen.css">
+        <link rel="stylesheet" href="assets/css/buttonStore.css">
+        
+        <link rel="icon" href="assets/img/fullicon.png" type="image/x-icon">
+        
+        <!--pure.io-->
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+        
+        <!--JQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        
+        <!--Font awesome-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+		
+        <!--Google font-->
+		<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    </head>
+     <div class="preload" id="preload">
+        <div class="loaderFrame">
+            <img src="assets/img/fullicon.png" class="loader1">
+            <img src="assets/img/icon.png" class="loader2">
+        </div>
+    </div>
+    <body>
+        <section class="searchh">
+            <form class="formnya">
+                <p>RENCY FASHION</p>
+                <input type="search" class="inputny" placeholder="What would you like to search for?" />
+                <button type="submit" class="sbtn fa fa-search" style="font-size: 20pt;"></button>
+            </form>
+            <div class="topp">
+                <img src="assets/img/segitiga.png" class="cari">
+            </div>
+        </section>
+        <header class="headProd" id="keatas">
+            <nav class="navs">
+                <img class="logoh" src="assets/img/icon.png" alt="logo">
+                <div class="navi navigas">
+                    <a href="homePage.html"><p class="naviga">HOME</p></a>
+                    <a href="products.html"><p class="naviga" style="font-weight: bold">PRODUCTS</p></a>
+                    <a href="submit.html"><p class="naviga">SUBMIT</p></a>
+                </div>
+            </nav>
+            <h1 class="produk"><a href="products.html">PRODUCTS</a><span class="bread"> >> Earrings</span></h1>
+        </header>
+        <main class="mainn">
+            <div class="miring navigas">
+                <a href="about.html"><span class="atur">ABOUT US</span></a>
+                <span class="atur">•</span>
+                <a href="contact.html"><span class="atur">CONTACT US</span></a>
+            </div>
+            <section>
+                <div class="container" align="center" style="margin-top: 5%;">
+                    <div class="row">
+                        <div class="col">
+                            <div class="gridStore" onmouseover="tombolEar1muncul()" onmouseout="tombolEar1hilang()">
+                                    <img src="assets/img/ear1.jpg" class="imgStore">
+                                <p class="namanya">La-la Earrings</p>
+                                    <p class="autor">Rp. 140.000,-<br>Designed by. Valencio</p>
+                                <div class="dalem" id="ear1">
+                                    <button class="btn btn-1 btn-1e" onclick="nampilinPop1()">DETAILS</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="gridStore" onmouseover="tombolEar2muncul()" onmouseout="tombolEar2hilang()">
+                                    <img src="assets/img/ear2.jpg" class="imgStore">
+                                <p class="namanya">Hola Earrings</p>
+                                    <p class="autor">Rp. 160.000,-<br>Designed by. Veren</p>
+                                <div class="dalem" id="ear2">
+                                    <button class="btn btn-1 btn-1e" onclick="nampilinPop2()">DETAILS</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="gridStore" onmouseover="tombolEar3muncul()" onmouseout="tombolEar3hilang()">
+                                    <img src="assets/img/ear3.jpg" class="imgStore">
+                                <p class="namanya">Diamond Earrings</p>
+                                    <p class="autor">Rp. 230.000,-<br>Designed by. Fransisca</p>
+                                <div class="dalem" id="ear3">
+                                    
+                                    <button class="btn btn-1 btn-1e" onclick="nampilinPop3()">DETAILS</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="gridStore" onmouseover="tombolEar4muncul()" onmouseout="tombolEar4hilang()">
+                                    <img src="assets/img/ear4.png" class="imgStore">
+                                <p class="namanya">Saphire Earrings</p>
+                                    <p class="autor">Rp. 280.000,-<br>Designed by. Eliona</p>
+                                <div class="dalem" id="ear4">
+                                    
+                                    <button class="btn btn-1 btn-1e" onclick="nampilinPop4()">DETAILS</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="gridStore" onmouseover="tombolEar5muncul()" onmouseout="tombolEar5hilang()">
+                                    <img src="assets/img/ear5.jpg" class="imgStore">
+                                <p class="namanya">Baby Blue Earrings</p>
+                                    <p class="autor">Rp. 280.000,-<br>Designed by. Victoria</p>
+                                <div class="dalem" id="ear5">
+                                    <button class="btn btn-1 btn-1e" onclick="nampilinPop5()">DETAILS</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="gridStore" onmouseover="tombolEar6muncul()" onmouseout="tombolEar6hilang()">
+                                    <img src="assets/img/ear6.jpg" class="imgStore">
+                                <p class="namanya">Flower Earrings</p>
+                                    <p class="autor">Rp. 230.000,-<br>Designed by. Lucas</p>
+                                <div class="dalem" id="ear6">
+                                    <button class="btn btn-1 btn-1e" onclick="nampilinPop6()">DETAILS</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <div class="popUp" id="popup">
+            
+        </div>
+        <div class="pop" id="pop1">
+            <span class="closePop" onclick="hilanginPop1()";>x</span>
+            <div id="popItem1" class="popupDalem">
+                <h2>La-la Earrings</h2>
+                <p class="designerDalem">Designed by Valencio</p>
+                <p class="hargaDalem">Rp. 140.000,-</p>
+                <p>This kind of earrings really suit for bohemian theme of occasion. It's catchy and can make you the center of attention. This earrings will be perfect if you combine it with plain clothes.</p>
+                <a class="pure-button keranjang" href="keranjang.html">
+                    <i class="fa fa-shopping-cart fa-lg"></i>
+                    Buy
+                </a>
+                <div class="tiles">
+                    <div class="tile imagePop" data-scale="1.6" data-image="assets/img/ear1.jpg"></div>
+                </div>
+            </div>
+        </div>
+        <div class="pop" id="pop2">
+            <span class="closePop" onclick="hilanginPop2()";>x</span>
+            <div id="popItem1" class="popupDalem">
+                <h2>Hola Earrings</h2>
+                <p class="designerDalem">Designed by Veren</p>
+                <p class="hargaDalem">Rp. 160.000,-</p>
+                <p>Not too boyish, not too girly. Combine this earrings with a black dress is a good idea. Beside it's good looking, this earrings also made from a good material. It's water resistance. So, you don't have to worry about the material.</p>
+                <a class="pure-button keranjang" href="keranjang.html">
+                    <i class="fa fa-shopping-cart fa-lg"></i>
+                    Buy
+                </a>
+                <div class="tiles">
+                    <div class="tile imagePop" data-scale="1.6" data-image="assets/img/ear2.jpg"></div>
+                </div>
+            </div>
+        </div>
+        <div class="pop" id="pop3">
+            <span class="closePop" onclick="hilanginPop3()";>x</span>
+            <div id="popItem1" class="popupDalem">
+                <h2>Diamond Earrings</h2>
+                <p class="designerDalem">Designed by Fransisca</p>
+                <p class="hargaDalem">Rp. 230.000,-</p>
+                <p>Handcrafted Bridal Pearl Earrings for Your Inner Princess. Make u look glam because it's simple but still give a luxury vibes.</p>
+                <a class="pure-button keranjang" href="keranjang.html">
+                    <i class="fa fa-shopping-cart fa-lg"></i>
+                    Buy
+                </a>
+                <div class="tiles">
+                    <div class="tile imagePop" data-scale="1.6" data-image="assets/img/ear3.jpg"></div>
+                </div>
+            </div>
+        </div>
+        <div class="pop" id="pop4">
+            <span class="closePop" onclick="hilanginPop4()";>x</span>
+            <div id="popItem1" class="popupDalem">
+                <h2>Saphire Earrings</h2>
+                <p class="designerDalem">Designed by Eliona</p>
+                <p class="hargaDalem">Rp. 280.000,-</p>
+                <p>Simple formal earrings suitable for the classiest of affairs. Don't worry it's not that heavy. Tie your hair become a pony tail to make this earrings look more catchy.</p>
+                <a class="pure-button keranjang" href="keranjang.html">
+                    <i class="fa fa-shopping-cart fa-lg"></i>
+                    Buy
+                </a>
+                <div class="tiles">
+                    <div class="tile imagePop" data-scale="1.6" data-image="assets/img/ear4.png"></div>
+                </div>
+            </div>
+        </div>
+        <div class="pop" id="pop5">
+            <span class="closePop" onclick="hilanginPop5()";>x</span>
+            <div id="popItem1" class="popupDalem">
+                <h2>Baby Blue Earrings</h2>
+                <p class="designerDalem">Designed by Victoria</p>
+                <p class="hargaDalem">Rp. 280.000,-</p>
+         <p>Blue is the color of the spirit.The designer make this earrings for those who want to go to a formal party. Combine it with a simple dress and you will look perfectly elegant. </p>
+                <a class="pure-button keranjang" href="keranjang.html">
+                    <i class="fa fa-shopping-cart fa-lg"></i>
+                    Buy
+                </a>
+                <div class="tiles">
+                    <div class="tile imagePop" data-scale="1.6" data-image="assets/img/ear5.jpg"></div>
+                </div>
+            </div>
+        </div>
+        <div class="pop" id="pop6">
+            <span class="closePop" onclick="hilanginPop6()";>x</span>
+            <div id="popItem1" class="popupDalem">
+                <h2>Flower Earrings</h2>
+                <p class="designerDalem">Designed by Lucas</p>
+                <p class="hargaDalem">Rp. 230.000,-</p>
+                <p>This cute size earrings will suit you for any kind of occasions. It's simple but still chic. This earrings is a must-buy item.</p>
+                <a class="pure-button keranjang" href="keranjang.html">
+                    <i class="fa fa-shopping-cart fa-lg"></i>
+                    Buy
+                </a>
+                <div class="tiles">
+                    <div class="tile imagePop" data-scale="1.6" data-image="assets/img/ear6.jpg"></div>
+                </div>
+            </div>
+        </div>
+        <a href="#keatas"><button id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button></a>
+        <footer>
+            <div class="footNav">
+                <a href="homePage.html">HOME</a>
+                <a href="products.html" style="font-weight: bold;">PRODUCTS</a>
+                <a href="about.html">ABOUT</a>
+                <a href="contact.html">CONTACT</a>
+                <a href="submit.html">SUBMIT</a>
+                <div class="allright">© 2018 Rency Fashion. All rights reserved. Rency Fashion Community</div>
+                <div class="sosmed">
+                    <a class="linksos" href="mailto:wivinadaicy@yahoo.com"><i class="fas fa-envelope"></i></a>
+                    <a class="linksos" href="https://www.youtube.com/channel/UCX02eqhzSYFk5RNjHOvZ73g?view_as=subscriber"><i class="fab fa-youtube"></i></a>
+                    <a class="linksos" href="https://www.instagram.com/verenvalenciaa/"><i class="fab fa-instagram"></i></a>
+                    <a class="linksos" href="https://www.facebook.com/veren.valencia.3"><i class="fab fa-facebook-square"></i></a>
+                    <a class="linksos" href="https://twitter.com/ren_valenciaa?lang=en"><i class="fab fa-twitter-square"></i></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/masonry.pkgd.min.js"></script>
+    <script src="assets/js/charming.min.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/demo.js"></script>
+    <script src="assets/js/loadingscreen.js"></script>
+    <script src="assets/js/fungsi.js"></script>
+    <script src="assets/js/zoomDetail.js"></script>
+    
+    <!--buat searh bar-->
+    <script>
+      $(".cari").click(function(){
+        $(".formnya").slideToggle();
+      });
+    </script>
+    
+</html>
